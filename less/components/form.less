@@ -1,0 +1,160 @@
+@form-color:          #000;
+@form-background:     #fff;
+@form-border:         1px solid #ccc;
+@form-height:         40px;
+@form-group-margin:   15px;
+@form-padding:        5px 10px;
+
+
+.form {
+	&-group {
+		margin-bottom: @form-group-margin;
+	}
+	&-control {
+		display: block;
+		width: 100%;
+		height: @form-height;
+		padding: @form-padding;
+		background-color: @form-background;
+		border: @form-border;
+		color: @form-color;
+		&:focus {
+
+		}
+		&::placeholder {
+
+		}
+	}
+	&-radio {
+
+	}
+	&-checkbox {
+
+	}
+	&-file {
+
+	}
+}
+.main_search {
+	background: #4875c2;
+background: -moz-linear-gradient(top, #4875c2 0%, #4876c2 63%, #4e82c7 71%, #5c9cd2 82%, #62a7d8 87%, #74cbe7 95%, #7bdaed 100%);
+background: -webkit-linear-gradient(top, #4875c2 0%,#4876c2 63%,#4e82c7 71%,#5c9cd2 82%,#62a7d8 87%,#74cbe7 95%,#7bdaed 100%);
+background: linear-gradient(to bottom, #4875c2 0%,#4876c2 63%,#4e82c7 71%,#5c9cd2 82%,#62a7d8 87%,#74cbe7 95%,#7bdaed 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4875c2', endColorstr='#7bdaed',GradientType=0 );
+position: relative;
+z-index: 1;
+padding-bottom: 20px;
+> img {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+}
+
+textarea.form-control {
+	height: auto;
+	resize: vertical;
+}
+.main_search_block > h3 {
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: @gf2;
+	padding: 30px 0 30px;
+	margin: 0;
+}
+.searchbox__block {
+	height: 55px;
+	background-color: #fff;
+	border-radius: 5px;
+	display: inline-flex;
+	width: 100%;
+	padding:  12px 18px 12px 23px;
+	margin-bottom: 35px;
+}
+.input-location-wrapper {
+
+	display: inline-block;
+	width: 60%;
+	input {
+		height: 100%;
+		width: 100%;
+		border: none;
+		border-right: 1px solid #d5e8ee;
+		padding-left: 15px;
+	}
+}
+.select_block {
+	display: inline-block;
+	padding-left: 32px;
+	width: 39%;
+	select {
+		height: 100%;
+		width: 100%;
+		border: none;
+		-webkit-appearance: none;
+	  -moz-appearance: none;
+	  appearance: none;
+	}
+}
+.tab_arrow {position: relative;}
+
+.tab_arrow.active {
+	&:after {
+			position: absolute;
+			content: "";
+			width: 0;
+		height: 0;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-bottom: 8px solid #fff;
+		top: -8px;
+		left: 50px;
+		}
+}
+.tab_cafe.active:after {
+	left: 150px;
+}
+.tab_excursions.active:after {
+	left: 300px;
+}
+.home_btn {
+	width: 150px;
+	height: 50px;
+	background-color: #f54337;
+	color: #fff;
+	text-transform: uppercase;
+	span {
+		color: @gc3;
+		display: inline-block;
+		margin-right: 15px;
+	}
+
+}
+.tab-content_control {
+	width: 100%;
+	color: #fff;
+	margin-bottom: 50px;
+
+	> h6 {
+		text-transform: uppercase;
+		margin: 0;
+		margin-bottom: 5px;
+	}
+	> button {
+		float: right;
+		margin-top: 30px;
+	}
+}
+.tab-content_control_block {
+	padding-left: 20px;
+		width: 70%;
+		height: 70px;
+	label {
+		width: 150px;
+		display: inline-block;
+		font-weight: normal;
+		
+
+	}
+}

@@ -1,0 +1,145 @@
+@navbar-breakpoint:    768px;
+.navbar-header {
+	a {
+			display: inline-block;
+			padding-top: 37px;
+		span {
+		display: inline-block;
+		text-indent: -10000px;	}
+	}
+
+}
+.navbar {
+	display: flex;
+	justify-content: flex-end;
+	margin: 0;
+	&-nav {
+		display: flex;
+
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		
+		> li {
+			padding: 0 20px 37px;
+
+			> a {
+					text-transform: uppercase;
+					display: inline-block;
+					border-bottom: 1px dotted @gc;
+					padding: 37px 0 4px;
+					font-size: 14px;
+
+
+			}
+			> a:hover {
+					background: none;
+				color: #251212;
+				border-bottom: none;
+			}
+		}
+		> li:last-child {
+			padding-right: 0;
+		}
+		
+
+		> li:hover {
+			border-bottom: 3px solid @gc3;
+			cursor: pointer;
+			a {
+				color: #251212;
+				border-bottom: none;
+			}
+		}
+		> li.active {
+			border-bottom: 3px solid @gc3;
+			cursor: default;
+			a {
+				color: #251212;
+				border-bottom: none;
+				cursor: default;
+				background: none;
+			}
+		}
+
+	}
+	&-toggle {
+		@media all and (min-width: @navbar-breakpoint)  {
+			display: none;
+		}
+	}
+	&-collapse {
+		@media all and (max-width: @navbar-breakpoint - 1px)  {
+			display: none;
+		}
+	}
+}
+.main_search_pills {
+		padding-bottom: 25px;
+	li {
+		a {
+			background: none;
+			font-size: 14px;
+			text-transform: uppercase;
+			color: #fff;
+			border: 1px solid transparent;
+			span {
+				display: inline-block;
+				margin-right: 5px;
+				color: @gc3;
+			}
+		}
+		a:hover {
+			background: none;
+		}
+		
+	}
+	.active a {
+		border: 1px solid @gc3;
+		border-radius: 4px;
+		span {color: #fff;}
+	}
+	
+
+}
+.navbar-nav > li > a:focus {
+		background: none;
+	}
+.main_gallery_pills {
+	li {
+			padding: 10px 15px;
+		a {
+			background: none;
+			font-size: 13px;
+			color: @gc;
+			border-bottom: 1px dotted @gc;
+			padding: 0;
+			border-radius: 0;
+		}
+		a:hover {
+			background: none;
+				color: @gc2;
+		}
+	}
+	> li.active {
+		border-bottom: 1px solid transparent;
+		background-image: linear-gradient(to top, #edf3f8 0%, #f1f7fa 100%);
+		border-radius: 4px;
+
+	}
+	> li.active > a {
+		background: none;
+		border: none;
+		color: @gc2;
+	}
+	> li.active > a:hover {
+		color: @gc2;
+		background: none;
+	}
+	> li.active > a:focus {
+		color: @gc2;
+		background: none;
+	}
+
+}
+

@@ -1,0 +1,252 @@
+@import 'components/variables.less';
+@import 'components/mixin.less';
+
+@import 'components/normalize.less';
+
+@import 'components/base.less';
+@import 'components/type.less';
+@import 'components/button.less';
+@import 'components/form.less';
+
+@import 'components/navbar.less';
+@import 'components/card.less';
+@import 'components/carousel.less';
+
+
+.main_features {
+	margin-top: -1px;
+	margin-bottom: 40px;
+	padding-top: 30px;
+	background: url(../images/water.png) top center no-repeat;
+	background-size: contain;
+}
+.main_features_block {
+	display: flex;
+	flex-direction: row;
+	height: 91px;
+	.description {
+		display: flex;
+  flex-direction: column;
+  justify-content: center;
+	height: 100%;
+		
+	h6 {
+		font-size: 14px;
+		text-align: left;
+		text-transform: uppercase;
+		color: @gc2;
+		font-family: @gf2;
+		font-weight: 600;
+		margin: 0 0 15px;
+	}
+	p {
+		font-size: 13px;
+			color: @gc;
+			margin: 0;
+	}
+	}
+	.main_features_block_img_wrapper {
+		display: inline-block;
+		min-width: 80px;
+		max-width: 89px;
+		margin-right: 20px;
+
+	}
+
+}
+.main_gallery_header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+.main_gallery_filter {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	> h4 {
+		font-family: @gf2;
+		font-size: 30px;
+		font-weight: 600;
+		line-height: 1.1;
+		text-transform: uppercase;
+		margin: 0;
+		margin-right: 40px;
+		color: @gc2;
+	}
+	> span {
+		display: inline-block;
+		font-weight: 500;
+		text-transform: uppercase;
+		margin-right: 25px;
+		color: @gc2;
+		.glyphicons {
+			color: #4ba2df;
+			display: inline-block;
+			margin-right: 5px;
+		}
+	}
+}
+.main_gallery_grid {
+	> li > a {color: #4ba2df;}
+	> li.active > a {
+		background-color: transparent;
+		color: @gc3;
+	}
+	>li.active>a:focus {
+		background-color: transparent; 
+		color: @gc3;}
+	 > li.active > a:hover {
+	 	color: @gc;
+		background-color: transparent;
+	 }
+}
+.tab_main_slider {
+	margin-bottom: 50px;
+}
+.main_bottom_text {
+	margin-bottom: 40px;
+	h2 {
+		font-family: @gf2;
+		color: @gc2;
+		font-size: 24px;
+		font-weight: 600;
+		margin: 0 0 25px;
+		line-height: 1.5;
+		text-transform: uppercase;
+	}
+}
+.footer_slider {
+	background: #f3f9ff;
+		height: 206px;
+	position: relative;
+	z-index: 2;
+	.airplane{
+	position: absolute;
+	top: -50px;
+	z-index: 3;
+}
+	.ship{
+	position: absolute;
+	bottom: -2px;
+	left: 50px;
+	z-index: 3;
+}
+.ship2 {
+		position: absolute;
+		right: -150px;
+		top: 50px;
+		z-index: 4;
+	}
+}
+
+.footer_sea_border {
+	position: absolute;
+	width: 100%;
+	bottom: -9px;
+	height: 22px;
+	display: inline-block;
+	left: 0;
+	right: 0;	
+	z-index: 3;
+	background: url(../images/sea.png) top center no-repeat;
+	background-size: cover;
+}
+
+.footer_nav {
+	position: relative;
+	z-index: 1;
+		height: 120px;
+		background-color: #4776c3;
+		color: #ffffff;
+		text-align: center;
+		padding-top: 40px;
+	h4 {
+	display: inline-block;
+	margin: 0;
+	font-family: @gf2;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.5em;
+	text-transform: uppercase;
+}
+	
+}
+
+.footer_nav_block {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	> li {
+	display: inline-block;
+	padding: 0 11px;
+	position: relative;
+}
+	> li:after {
+	content: "/";
+	position: absolute;
+	bottom: 0;
+	right: -5px;
+}
+	> li:last-child:after {
+	display: none;
+}
+	> li > a {
+	color: #fff;
+}
+}
+.footer_bottom {padding-top: 25px;}
+.footer_logo_left {
+	display: flex;
+	flex-direction: row;
+}
+.footer_logo {
+	a {
+			display: inline-block;
+			
+			margin-right: 40px;
+		span {
+		display: inline-block;
+		text-indent: -10000px;	}
+	}
+
+}
+.footer_copyright {
+	strong {
+		display: block;
+		color: @gc2;
+		font-weight: normal;
+	}
+}
+.footer_bottom_nav {
+	display: flex;
+	flex-direction: row;
+ }
+
+.footer_bottom_nav_social {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-right: 40px;
+	> li {
+		display: inline-block;
+
+		> a {
+		display: inline-block;
+		width: 28px;
+		height: 28px;
+		background-color: #e6eef6;
+		border-radius: 2px;
+	}
+	}
+}
+.footer_back {
+		display: inline-block;
+	a {
+		color: @gc2;
+	}
+}
+.footer_bottom_team {
+	display: flex;
+	flex-direction: row;
+}
