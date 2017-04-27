@@ -181,13 +181,13 @@
 				<h4>Самое Популярное</h4>
 				<span><span class="glyphicons glyphicons-filter"></span> Фильтр по</span>
 				<ul class="nav nav-pills main_gallery_pills">
-					 <li class="active"><a data-toggle="pill" href="#home2">Жилье</a></li>
-					 <li><a data-toggle="pill" href="#menu11">Рестораны, кафе</a></li>
-					 <li><a data-toggle="pill" href="#menu12">Экскурсии</a></li>
+					 <li class="active"><a data-toggle="pill" href="#menu15">Жилье</a></li>
+					 <li><a data-toggle="pill" href="#menu13">Рестораны, кафе</a></li>
+					 <li><a data-toggle="pill" href="#menu14">Экскурсии</a></li>
 					</ul>
 				</div>
 					<ul class="nav nav-pills main_gallery_grid">
-					  <li ><a data-toggle="pill" href="#menu11"><span class="glyphicons glyphicons-show-thumbnails"></span></a></li>
+					  <li class="reinit2"><a data-toggle="pill" href="#menu11"><span class="glyphicons glyphicons-show-thumbnails"></span></a></li>
 					  <li class="active"><a data-toggle="pill" href="#home2"><span class="glyphicons glyphicons-show-big-thumbnails"></span></a></li>
 					</ul>
 					</div>
@@ -229,7 +229,7 @@
 
 					  </div>
 					  <div id="menu11" class="tab-pane fade slider_6_item">
-					    <ul>
+					    <ul id="menu66">
 					    	<li class="slide_6_item">
 					    		<a href="">
 						    		<span></span>
@@ -413,31 +413,8 @@
 	 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
    <script src="js/slick.min.js"></script>
-		 <script>
-		 			$(document).ready(function () {
-	$('.slider_2_item ul').slick({
-		dots: false,
-  infinite: true,
-  slidesToShow: 2,
-  slidesToScroll: 2
-});
-	})
-
-		 			$(document).ready(function () {
-	$('.slider_6_item ul').slick({
-		dots: false,
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3
-});
-	})
-		 				$(document).ready(function () {
-	$('.footer_slider_block ul').slick({
-		dots: true,
-  infinite: true
-});
-	})
-		 </script>
+    <script src="js/gustavo.js"></script>
+		
 </body>
 
 </html>

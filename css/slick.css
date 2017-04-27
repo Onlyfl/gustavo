@@ -168,3 +168,22 @@
 .footer_slide_block_desk {
     width: 60%;
 }
+.ui-widget-content[aria-hidden="true"] {
+    display: block !important;
+    height: 0px;
+    overflow: hidden;
+}
+.ui-widget-content[aria-hidden="false"] {
+    display: block !important;
+    height: auto;
+}
+// slider in tabs hack
+/* bootstrap hack: fix content width inside hidden tabs */
+.tab-content > .tab-pane , .pill-content > .pill-pane {
+    display: block;    /* undo display:none          */
+    height: 0;         /* height:0 is also invisible */ 
+    overflow: hidden;  /* no-overflow                */
+}
+.tab-content > .active , .pill-content > .active {
+    height: auto;      /* let the content decide it  */
+} /* bootstrap hack end */
