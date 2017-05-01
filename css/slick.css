@@ -1,4 +1,6 @@
 /* Slider */
+
+
 .slick-slider
 {
     position: relative;
@@ -156,34 +158,80 @@
 }
 .footer_slider_block {
     padding-top: 30px;
+     margin: 0 auto;
+
+}
+.footer_slider_block .slick-slider {
+    margin: 0 auto;
+    padding: 0;
+    width: 65%;
+    
+}
+.footer_slider_block .slick-arrow {
+    position: absolute;
+    display:inline-block;
+    text-indent: -10000px;
+    top: 40px;
+    width: 15px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    z-index: 10;
+}
+.footer_slider_block .slick-next {
+   left: -150px;
+     background:  url(../images/next2.png) 0 0 no-repeat;
+}
+
+.footer_slider_block .slick-prev {
+     right: -90px;
+  background:  url(../images/prev2.png) 0 0 no-repeat;
+}
+.footer_slider_block .slick-dots {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.footer_slider_block .slick-dots > li {
+    display: inline-block;
+    border: none;
+    text-indent: -9999px;
+    width: 11px;
+    height: 11px;
+    margin: 0 5px;
+    background-color: transparent;
+    background: url(../images/dot.png) 0 0 no-repeat;
+}
+.footer_slider_block .slick-dots > li.slick-active {
+     background: url(../images/dot_active.png) 0 0 no-repeat;
 }
 .footer_slide_block {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
+
+ 
 }
+
 .footer_slide_block_img_wrap {
-    width: 40%;
+    width: 20%;
+    float: left;
+
+}
+.footer_slide_block_img_wrap img {
+    width: 100%;
 }
 .footer_slide_block_desk {
-    width: 60%;
+    width:76%;
+    float: left;
+    margin-left: 25px;
 }
-.ui-widget-content[aria-hidden="true"] {
-    display: block !important;
-    height: 0px;
-    overflow: hidden;
+.footer_slide_block_desk h6{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Exo 2', sans-serif;
+    color: #2b2d35;
+    font-weight: 600;
 }
-.ui-widget-content[aria-hidden="false"] {
-    display: block !important;
-    height: auto;
-}
-// slider in tabs hack
-/* bootstrap hack: fix content width inside hidden tabs */
-.tab-content > .tab-pane , .pill-content > .pill-pane {
-    display: block;    /* undo display:none          */
-    height: 0;         /* height:0 is also invisible */ 
-    overflow: hidden;  /* no-overflow                */
-}
-.tab-content > .active , .pill-content > .active {
-    height: auto;      /* let the content decide it  */
-} /* bootstrap hack end */
+
