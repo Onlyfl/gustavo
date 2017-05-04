@@ -155,6 +155,46 @@
     width: 323px;
     height: 210px;
     display: inline-block;
+    position: relative;
+    border-radius: 5px;
+}
+.slide_2_item > a {
+   position: relative;
+    display: inline-block;
+    border-radius: 5px;
+}
+.slide_2_item > a > h6, .slide_6_item > a > h6 {
+    display: inline-block;
+    width: 90%;
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 24px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Exo 2', sans-serif;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+        transform: translate(-50%,0);
+
+}
+.slide_2_item > a > span, .slide_6_item > a > span {
+    display: inline-block;
+  background-color: rgba(43, 45, 53, 0.65);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.slide_2_item > a > span > .glyphicons, .slide_6_item > a > span .glyphicons{
+    padding-right: 7px; 
+    padding-top: 2px;
+    color: #fedc37;
+    display: inline-block;
 }
 .footer_slider_block {
     padding-top: 30px;
@@ -205,6 +245,7 @@
     margin: 0 5px;
     background-color: transparent;
     background: url(../images/dot.png) 0 0 no-repeat;
+    cursor: pointer;
 }
 .footer_slider_block .slick-dots > li.slick-active {
      background: url(../images/dot_active.png) 0 0 no-repeat;
