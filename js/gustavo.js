@@ -17,6 +17,15 @@
   slidesToScroll: 3
 });
 	})
+	
+$(document).ready(function () {
+	$('.slider_3_item ul').slick({
+		dots: true,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
+	})
 		 				
 $(document).ready(function () {
 	$('.footer_slider_block ul').slick({

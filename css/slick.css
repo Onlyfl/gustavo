@@ -78,8 +78,6 @@
 {
     display: none;
     float: left;
-
-    height: 100%;
     min-height: 1px;
 }
 [dir='rtl'] .slick-slide
@@ -122,6 +120,13 @@
     margin: 0;
     padding: 0 60px;
 }
+.slider_3_item {margin: 0 -15px;}
+.slider_3_item ul{
+   position: relative;
+    margin: 0;
+    padding: 0;
+
+}
 .slider_2_item button.slick-arrow, .slider_6_item button.slick-arrow{
 	position: absolute;
 	text-indent: -10000px;
@@ -151,19 +156,27 @@
     right: 0;
 }
 
-.slide_6_item > a {
+.slide_6_item > a, .slide_3_item > a {
     width: 323px;
-    height: 210px;
+    height: 224px;
     display: inline-block;
     position: relative;
     border-radius: 5px;
 }
+.slide_3_item > a {
+    width: auto;
+    margin: 20px;
+}
+.slide_3_item > a > img {
+    
+}
+
 .slide_2_item > a {
    position: relative;
     display: inline-block;
     border-radius: 5px;
 }
-.slide_2_item > a > h6, .slide_6_item > a > h6 {
+.slide_2_item > a > h6, .slide_6_item > a > h6, .slide_3_item > a > h6 {
     display: inline-block;
     width: 90%;
     margin: 0;
@@ -178,9 +191,31 @@
     -webkit-transform: translate(-50%,0);
     -ms-transform: translate(-50%,0);
         transform: translate(-50%,0);
-
+    z-index: 3;
 }
-.slide_2_item > a > span, .slide_6_item > a > span {
+.slide_3_item > a > h6 { 
+    text-align: left;
+     bottom: 54px;
+}
+.slide_3_item > a > p { 
+    display: inline-block;
+    width: 90%;
+    height: 32px;
+    overflow: hidden;
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    bottom: 14px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.2em;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+        transform: translate(-50%,0);
+}
+
+.slide_2_item > a > span, .slide_6_item > a > span, .slide_3_item > a > span {
     display: inline-block;
   background-color: rgba(43, 45, 53, 0.65);
   color: #fff;
@@ -190,45 +225,62 @@
   top: 20px;
   left: 20px;
 }
-.slide_2_item > a > span > .glyphicons, .slide_6_item > a > span .glyphicons{
+.slide_2_item > a > span > .glyphicons, .slide_3_item > a > span > .glyphicons, .slide_6_item > a > span .glyphicons{
     padding-right: 7px; 
     padding-top: 2px;
     color: #fedc37;
     display: inline-block;
 }
+.slide_3_item > a > span em{
+     color: #fedc37;
+    display: inline-block;
+    font-style: normal;
+     padding-right: 3px;
+}
 .footer_slider_block {
     padding-top: 30px;
      margin: 0 auto;
+     position: relative;
 
 }
 .footer_slider_block .slick-slider {
     margin: 0 auto;
+   position: static;
     padding: 0;
     width: 65%;
     
 }
-.footer_slider_block .slick-arrow {
+.footer_slider_block .slick-arrow, .slider_3_item .slick-arrow {
     position: absolute;
-    display:inline-block;
+    display: inline-block;
     text-indent: -10000px;
-    top: 40px;
+    top: 80px;
     width: 15px;
     height: 22px;
     background-color: transparent;
     border: none;
     z-index: 10;
 }
-.footer_slider_block .slick-next {
-   left: -150px;
+.slider_3_item .slick-arrow { 
+     top: 120px;
+}
+.footer_slider_block .slick-next, .slider_3_item .slick-next {
+   left: 0;
      background:  url(../images/next2.png) 0 0 no-repeat;
 }
+ .slider_3_item .slick-next {
+    left: -18px;
+}
 
-.footer_slider_block .slick-prev {
-     right: -90px;
+.footer_slider_block .slick-prev, .slider_3_item .slick-prev {
+     right: 0;
   background:  url(../images/prev2.png) 0 0 no-repeat;
 }
-.footer_slider_block .slick-dots {
-    position: absolute;
+.slider_3_item .slick-prev {
+     right: -18px;
+}
+.footer_slider_block .slick-dots, .slider_3_item .slick-dots {
+    position: relative;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -236,18 +288,21 @@
     width: 100%;
     text-align: center;
 }
-.footer_slider_block .slick-dots > li {
+.slider_3_item .slick-dots {
+    margin: 20px 0 30px;
+}
+.footer_slider_block .slick-dots > li, .slider_3_item .slick-dots > li {
     display: inline-block;
     border: none;
     text-indent: -9999px;
-    width: 11px;
+    width: 12px;
     height: 11px;
     margin: 0 5px;
     background-color: transparent;
     background: url(../images/dot.png) 0 0 no-repeat;
     cursor: pointer;
 }
-.footer_slider_block .slick-dots > li.slick-active {
+.footer_slider_block .slick-dots > li.slick-active, .slider_3_item .slick-dots > li.slick-active {
      background: url(../images/dot_active.png) 0 0 no-repeat;
 }
 .footer_slide_block {
