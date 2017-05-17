@@ -124,7 +124,11 @@
 {
     padding-left: 40px;
 }
-.slider_3_item {margin: 0 -15px;}
+.slider_3_item {
+    margin: 0 -15px 30px;
+    padding-bottom: 30px;
+    background: #fff url(../images/border.png) bottom center no-repeat;
+}
 .slider_3_item ul{
    position: relative;
     margin: 0;
@@ -293,7 +297,7 @@
     text-align: center;
 }
 .slider_3_item .slick-dots {
-    margin: 20px 0 30px;
+    margin: 20px 0 0;
 }
 .footer_slider_block .slick-dots > li, .slider_3_item .slick-dots > li {
     display: inline-block;
