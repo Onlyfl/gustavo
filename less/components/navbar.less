@@ -211,6 +211,7 @@
 }
 .city_top_navbar {
 	background-color: #1d88e6;
+	margin-bottom: 40px;
 }
 .city_top_navbar_block {
 	padding: 0;
@@ -234,4 +235,28 @@
     padding: 8px 25px; 
 		}
 	} 
+}
+.main_region_header_nav_pills {
+	.city_top_navbar_block;
+	> li {
+		padding: 0;
+		a:hover {
+			background-color: transparent;
+			color: @gc;
+		}
+	}
+	>  li.active {
+		background-color: transparent;
+		a {
+		background-color: transparent;
+		padding: 10px 15px;
+		}
+		a:focus {
+		background-color: transparent;
+		}
+		a:hover {
+			background-color: transparent;
+			color: @gc;
+		}
+	}
 }
