@@ -41,6 +41,19 @@ $(document).ready(function () {
 		 
     });
 	
+$(document).on('click','.main_region_body_list_opened', function() {
+		  $('.main_region_body_list_opened').animate({ marginTop: '0'}, "slow");
+		   $('.main_region_body_list_opened').addClass('opened');
+
+    });
+	
+	$(document).on('click','.opened', function() {
+		   $('.main_region_body_list_opened').removeClass('opened');
+		   $('.main_region_body_list_opened').animate({ marginTop: '-120px'}, "slow");
+
+    });
+	
+	
 
 
 

@@ -1345,6 +1345,7 @@ textarea.form-control {
   font-family: 'Exo 2', sans-serif;
   text-align: left;
   margin-bottom: 100px;
+  text-shadow: rgba(0, 0, 0, 0.77) 0px 0px 3px;
 }
 .main_region_header_block {
   display: -webkit-flex;
@@ -1365,10 +1366,12 @@ textarea.form-control {
   font-family: 'Exo 2', sans-serif;
   text-align: left;
   margin-bottom: 100px;
+  text-shadow: rgba(0, 0, 0, 0.77) 0px 0px 3px;
   margin: 0;
 }
 .main_region_body {
-  min-height: 620px;
+  min-height: 520px;
+  padding-bottom: 20px;
   color: #fff;
   background: -moz-linear-gradient(top, rgba(43, 45, 53, 0) 0%, rgba(43, 45, 53, 0.02) 3%, rgba(43, 45, 53, 0.08) 6%, rgba(43, 45, 53, 0.17) 8%, rgba(43, 45, 53, 0.39) 12%, rgba(43, 45, 53, 0.54) 16%, rgba(43, 45, 53, 0.68) 26%, rgba(43, 45, 53, 0.86) 42%, #2b2d35 59%, #2b2d35 100%);
   background: -webkit-linear-gradient(top, rgba(43, 45, 53, 0) 0%, rgba(43, 45, 53, 0.02) 3%, rgba(43, 45, 53, 0.08) 6%, rgba(43, 45, 53, 0.17) 8%, rgba(43, 45, 53, 0.39) 12%, rgba(43, 45, 53, 0.54) 16%, rgba(43, 45, 53, 0.68) 26%, rgba(43, 45, 53, 0.86) 42%, #2b2d35 59%, #2b2d35 100%);
@@ -1387,7 +1390,7 @@ textarea.form-control {
 }
 .main_region_body_list_head {
   margin-top: 60px;
-  margin-bottom: 0;
+  margin-bottom: 60px;
   font-weight: normal;
   font-size: 24px;
   text-transform: uppercase;
@@ -1398,6 +1401,9 @@ textarea.form-control {
   padding: 0;
   margin: 0;
 }
+.main_region_body_list_block li {
+  margin-bottom: 10px;
+}
 .main_region_body_list_block li a span {
   display: inline-block;
 }
@@ -1406,6 +1412,88 @@ textarea.form-control {
   font-size: 15px;
   display: inline-block;
   margin-right: 10px;
+}
+.main_region_body_list_block li a:hover > span {
+  color: #fff;
+}
+.main_region_body_list_block li a:hover > span span {
+  color: #ffeb3c;
+}
+.main_region_body_list_opened {
+  position: relative;
+  z-index: 2;
+  height: 120px;
+  margin-top: -120px;
+  text-align: center;
+  background: -moz-linear-gradient(top, rgba(43, 45, 53, 0.7) 0%, rgba(43, 45, 53, 0.9) 27%, rgba(43, 45, 53, 0.99) 45%, rgba(43, 45, 53, 0.99) 100%);
+  background: -webkit-linear-gradient(top, rgba(43, 45, 53, 0.7) 0%, rgba(43, 45, 53, 0.9) 27%, rgba(43, 45, 53, 0.99) 45%, rgba(43, 45, 53, 0.99) 100%);
+  background: linear-gradient(to bottom, rgba(43, 45, 53, 0.7) 0%, rgba(43, 45, 53, 0.9) 27%, rgba(43, 45, 53, 0.99) 45%, rgba(43, 45, 53, 0.99) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b32b2d35', endColorstr='#fc2b2d35', GradientType=0);
+}
+.main_region_body_list_opened > span {
+  display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+  color: #a3a3a3;
+  padding-top: 70px;
+  cursor: pointer;
+}
+.main_region_body_list_opened > span:before {
+  content: "";
+  position: absolute;
+  bottom: -85px;
+  left: 50%;
+  margin-left: -25%;
+  z-index: 2;
+  width: 68px;
+  height: 68px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  background: transparent url(../images/prev.png) no-repeat;
+  cursor: pointer;
+}
+.main_region_body_list_opened.opened:before {
+  -webkit-animation: cssAnimation 1s 16 ease;
+  -moz-animation: cssAnimation 1s 16 ease;
+  -o-animation: cssAnimation 1s 16 ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  background: transparent url(../images/prev.png) no-repeat;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+@-webkit-keyframes cssAnimation {
+  from {
+    -webkit-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+  }
+  to {
+    -webkit-transform: rotate(180deg) scale(1) skew(1deg) translate(0px);
+  }
+}
+@-moz-keyframes cssAnimation {
+  from {
+    -moz-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+  }
+  to {
+    -moz-transform: rotate(180deg) scale(1) skew(1deg) translate(0px);
+  }
+}
+@-o-keyframes cssAnimation {
+  from {
+    -o-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+  }
+  to {
+    -o-transform: rotate(180deg) scale(1) skew(1deg) translate(0px);
+  }
+}
+.main_region_body_list_opened.open {
+  margin-top: 0;
 }
 .main_city_info_block_body {
   min-height: 400px;
@@ -1423,10 +1511,12 @@ textarea.form-control {
   color: #fff;
   text-align: center;
   margin: 18px 0 25px;
+  text-shadow: rgba(0, 0, 0, 0.77) 0px 0px 3px;
 }
 .main_city_info_block_text p {
   color: #afb7bf;
   text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.77) 0px 0px 3px;
 }
 .main_city_filter_header h6 {
   font-size: 24px;
