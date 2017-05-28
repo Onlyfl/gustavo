@@ -595,29 +595,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b32b2d35', e
 		}
 	}
 }
-.main_region_body_list_opened.opened:before {
+.main_region_body_list_opened.opened {
+	> span:before {
     -webkit-animation: cssAnimation 1s 16 ease;
     -moz-animation: cssAnimation 1s 16 ease;
     -o-animation: cssAnimation 1s 16 ease;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
     background: transparent url(../images/prev.png) no-repeat;
-    -webkit-transform: rotate(30deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg); 
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg); 
     @-webkit-keyframes cssAnimation {
 from { -webkit-transform: rotate(0deg) scale(1) skew(1deg) translate(0px); }
-to { -webkit-transform: rotate(180deg) scale(1) skew(1deg) translate(0px); }
+to { -webkit-transform: rotate(2700deg) scale(1) skew(1deg) translate(0px); }
 }
 @-moz-keyframes cssAnimation {
 from { -moz-transform: rotate(0deg) scale(1) skew(1deg) translate(0px); }
-to { -moz-transform: rotate(180deg) scale(1) skew(1deg) translate(0px); }
+to { -moz-transform: rotate(270deg) scale(1) skew(1deg) translate(0px); }
 }
 @-o-keyframes cssAnimation {
 from { -o-transform: rotate(0deg) scale(1) skew(1deg) translate(0px); }
-to { -o-transform: rotate(180deg) scale(1) skew(1deg) translate(0px); }
+to { -o-transform: rotate(270deg) scale(1) skew(1deg) translate(0px); }
+}
 }
   }
 
