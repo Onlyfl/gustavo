@@ -1529,7 +1529,17 @@ textarea.form-control {
 .main_city_filter_block {
   padding-bottom: 20px;
 }
+.main_city_filter_block_item:hover {
+  cursor: pointer;
+}
+.main_city_filter_block_item:hover > span {
+  border: 1px solid #ffeb3c;
+}
 .main_city_filter_block_item {
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+  padding-bottom: 25px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1538,21 +1548,28 @@ textarea.form-control {
   flex-direction: row;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 40px;
 }
 .main_city_filter_block_item > p {
   display: inline-block;
   text-decoration: underline;
   margin: 0;
 }
-.main_city_filter_block_item:hover {
-  cursor: pointer;
+.main_city_filter_block_item > label > p {
+  padding-top: 15px;
+  display: inline-block;
+  text-decoration: underline;
+  margin: 0;
+  font-weight: 100;
 }
-.main_city_filter_block_item:hover > span {
+.main_city_filter_block_item > label:hover {
+  /*cursor: pointer;   */
+  color: #ffeb3c;
+}
+.main_city_filter_block_item > label:hover > span {
   border: 1px solid #ffeb3c;
 }
 .main_city_icon_filter {
+  float: left;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1567,7 +1584,7 @@ textarea.form-control {
   height: 46px;
   border-radius: 5px;
   text-align: center;
-  margin-right: 15px;
+  /*margin-right: 15px;*/
 }
 .main_city_icon_filter > span {
   font-size: 24px;

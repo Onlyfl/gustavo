@@ -659,32 +659,66 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#142b2d35', e
 .main_city_filter_block {
 	padding-bottom: 20px;
 }
+.main_city_filter_block_item:hover  {
+	> span {border: 1px solid @gc3;}
+		cursor: pointer;
+	}
 .main_city_filter_block_item {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	margin-bottom: 40px;
+	 width: 100%;
+	  padding-bottom: 25px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  
 	> p {
 		display: inline-block;
 		text-decoration: underline;
 		margin: 0; 
 	}
-	
-}
-.main_city_filter_block_item:hover  {
-	> span {border: 1px solid @gc3;}
-		cursor: pointer;
+	> label {
+		> p {
+			padding-top: 15px;
+			display: inline-block;
+		  text-decoration: underline;
+		  margin: 0;
+		  font-weight: 100;
+		}
+		&:hover {
+			  /*cursor: pointer;   */ 
+			  color: #ffeb3c;
+			  > span {
+			  	  border: 1px solid #ffeb3c;
+			  }
+		}
 	}
+}
+
 .main_city_icon_filter {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: 1px solid #53565d;
-	width: 46px;
-	height: 46px;
-	border-radius: 5px;
-	text-align: center;
-	margin-right: 15px;
+	 float: left;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid #53565d;
+  width: 46px;
+  height: 46px;
+  border-radius: 5px;
+  text-align: center;
+  /*margin-right: 15px;*/
 	> span {
 		font-size: 24px;
 		color: @gc3;
