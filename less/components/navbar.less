@@ -236,10 +236,20 @@
 		}
 	} 
 }
+
 .main_region_header_nav_pills {
 	.city_top_navbar_block;
 	> li {
 		padding: 0;
+		> a {
+			 color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 2px solid transparent;
+    text-shadow: black 0 0px 2px;
+    transition: all 0.5s;
+    background: rgba(254, 228, 0, 0.3);
+		}
 		a:hover {
 			background-color: transparent;
 			color: @gc;
@@ -248,15 +258,22 @@
 	>  li.active {
 		background-color: transparent;
 		a {
-		background-color: transparent;
-		padding: 10px 15px;
+		 border: 2px solid #ffeb3c;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.31);
+    text-shadow: black 0 3px 4px;
+    transition: all 0.5s;  
 		}
 		a:focus {
 		background-color: transparent;
 		}
-		a:hover {
-			background-color: transparent;
-			color: @gc;
-		}
+		
 	}
+	> li:hover a {
+			 border: 2px solid #ffeb3c;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.31);
+    text-shadow: black 0 3px 4px;
+    transition: all 0.5s;  
+		}
 }

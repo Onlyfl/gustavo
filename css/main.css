@@ -836,6 +836,15 @@ textarea.form-control {
 .main_region_header_nav_pills > li {
   padding: 0;
 }
+.main_region_header_nav_pills > li > a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: 2px solid transparent;
+  text-shadow: black 0 0px 2px;
+  transition: all 0.5s;
+  background: rgba(254, 228, 0, 0.3);
+}
 .main_region_header_nav_pills > li a:hover {
   background-color: transparent;
   color: #838e98;
@@ -844,15 +853,21 @@ textarea.form-control {
   background-color: transparent;
 }
 .main_region_header_nav_pills > li.active a {
-  background-color: transparent;
-  padding: 10px 15px;
+  border: 2px solid #ffeb3c;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.31);
+  text-shadow: black 0 3px 4px;
+  transition: all 0.5s;
 }
 .main_region_header_nav_pills > li.active a:focus {
   background-color: transparent;
 }
-.main_region_header_nav_pills > li.active a:hover {
-  background-color: transparent;
-  color: #838e98;
+.main_region_header_nav_pills > li:hover a {
+  border: 2px solid #ffeb3c;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.31);
+  text-shadow: black 0 3px 4px;
+  transition: all 0.5s;
 }
 .card {
   display: -webkit-flex;
@@ -1758,21 +1773,4 @@ textarea.form-control {
 .popular-item-x6:hover:after,
 .popular-item-x2:hover:after {
   height: 100%;
-}
-.main_region_header_nav_pills > li > a {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 14px;
-  border: 2px solid transparent;
-  text-shadow: black 0 0px 2px;
-  transition: all 0.5s;
-  background: rgba(254, 228, 0, 0.3);
-}
-.main_region_header_nav_pills > li.active > a,
-.main_region_header_nav_pills > li:hover > a {
-  border: 2px solid #ffeb3c;
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.31);
-  text-shadow: black 0 3px 4px;
-  transition: all 0.5s;
 }
