@@ -1359,7 +1359,7 @@ textarea.form-control {
   justify-content: space-between;
   padding-top: 50px;
 }
-.main_region_header_block > h3 {
+.main_region_header_block > h1 {
   font-size: 30px;
   text-transform: uppercase;
   color: #fff;
