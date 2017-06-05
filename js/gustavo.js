@@ -53,6 +53,22 @@ $(document).on('click','.main_region_body_list_opened', function() {
 
     });
 	
+	$(document).on('click','.main_filter_toogle', function() {
+
+      $('.main_filter_toogle').parent().children('.main_filter_drop').show("slow");
+	   $('.main_filter_toogle').toggleClass('opened');
+		
+
+    });
+	$(document).on('click','.main_filter_toogle.opened', function() {
+
+       $('.main_filter_toogle').parent().children('.main_filter_drop').hide("slow");
+
+		
+
+    });
+	
+	
 	
 
 
