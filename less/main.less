@@ -1184,3 +1184,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#142b2d35', e
 				overflow: hidden;
 	}
 }
+
+.main_filter_drop {
+	input[type="checkbox"] {
+	    display:none;
+	}
+	.checkbox {
+		label {
+			padding: 0;
+		}
+	}
+	input[type="checkbox"] + label::before {
+    display:inline-block;
+    width:13px;
+	  height:9px;
+    margin:-1px 14px 0 0;
+    vertical-align:middle;
+    background:url(../images/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+    content:"";
+}
+	input[type="checkbox"]:checked + label::before {
+	    background:url(../images/check_radio_sheet.png) -15px top no-repeat;
+    }
+ }

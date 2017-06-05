@@ -2163,3 +2163,22 @@ textarea.form-control {
   height: 60px;
   overflow: hidden;
 }
+.main_filter_drop input[type="checkbox"] {
+  display: none;
+}
+.main_filter_drop .checkbox label {
+  padding: 0;
+}
+.main_filter_drop input[type="checkbox"] + label::before {
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  margin: -1px 14px 0 0;
+  vertical-align: middle;
+  background: url(../images/check_radio_sheet.png) left top no-repeat;
+  cursor: pointer;
+  content: "";
+}
+.main_filter_drop input[type="checkbox"]:checked + label::before {
+  background: url(../images/check_radio_sheet.png) -15px top no-repeat;
+}
