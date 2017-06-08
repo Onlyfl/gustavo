@@ -1089,24 +1089,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#142b2d35', e
 			}	
 		}
 		> li:hover > span.hotel-properties_text {
-				display: block;
+				  display: block;
+			    transform: translateY(-28px);
+			    transition: all 0.4s;
+			    opacity: 1;
+			    z-index: 2;
+			    visibility: visible;
 		}
 	}
 }
 .hotel-properties_text {
-	display: block;
-    position: absolute;
-    top: -5px;
-    left: -20px;
-    bottom: 0;
-		height: 28px;
-		padding: 3px 10px 0;
-    text-align: center;
-    color: #fff;
-   z-index: 2;
-    white-space: nowrap;
-    background-color: rgba(52, 53, 60, 0.9);
-    display: none;
+			display: block;
+		  position: absolute;
+		  top: -5px;
+		  left: -20px;
+		  bottom: 0;
+		  height: 28px;
+		  padding: 3px 10px 0;
+		  text-align: center;
+		  color: #fff;
+		  z-index: -1;
+		  white-space: nowrap;
+		  background-color: rgba(52, 53, 60, 0.7);
+		  opacity: 0;
+		  visibility: hidden;
+  /*display: none;*/
 }
 .main_filter_mainblock_body_text {
 
@@ -1207,4 +1214,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#142b2d35', e
 	input[type="checkbox"]:checked + label::before {
 	    background:url(../images/check_radio_sheet.png) -15px top no-repeat;
     }
+ }
+ .main_city_info_block_footer.inverse {
+ 	background-color: transparent;
+ }
+ .main_city_info_block_footer_nav.inverse {
+ 	> h4 {
+ 		color: #FFF;
+ 	}
+ 	a {
+ 		span {
+ 			background-color: @gc3;
+ 			.glyphicons {
+ 				border-radius: 5px;
+ 				color: #423c3f;
+ 				left: 1px;
+ 			}
+ 		}
+ 	}
  }

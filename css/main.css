@@ -2075,6 +2075,15 @@ textarea.form-control {
 }
 .main_filter_mainblock_body_img_wrapp .hotel-properties > li:hover > span.hotel-properties_text {
   display: block;
+  -webkit-transform: translateY(-28px);
+  -ms-transform: translateY(-28px);
+  transform: translateY(-28px);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 1;
+  z-index: 2;
+  visibility: visible;
 }
 .hotel-properties_text {
   display: block;
@@ -2086,10 +2095,12 @@ textarea.form-control {
   padding: 3px 10px 0;
   text-align: center;
   color: #fff;
-  z-index: 2;
+  z-index: -1;
   white-space: nowrap;
-  background-color: rgba(52, 53, 60, 0.9);
-  display: none;
+  background-color: rgba(52, 53, 60, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  /*display: none;*/
 }
 .main_filter_mainblock_body_text_top {
   height: 120px;
@@ -2181,4 +2192,18 @@ textarea.form-control {
 }
 .main_filter_drop input[type="checkbox"]:checked + label::before {
   background: url(../images/check_radio_sheet.png) -15px top no-repeat;
+}
+.main_city_info_block_footer.inverse {
+  background-color: transparent;
+}
+.main_city_info_block_footer_nav.inverse > h4 {
+  color: #FFF;
+}
+.main_city_info_block_footer_nav.inverse a span {
+  background-color: #ffeb3c;
+}
+.main_city_info_block_footer_nav.inverse a span .glyphicons {
+  border-radius: 5px;
+  color: #423c3f;
+  left: 1px;
 }
