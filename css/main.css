@@ -2207,3 +2207,35 @@ textarea.form-control {
   color: #423c3f;
   left: 1px;
 }
+.main_city_info_block_header_photo {
+  margin-top: 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Exo 2', sans-serif;
+  text-align: left;
+  margin-bottom: 120px;
+  text-shadow: rgba(0, 0, 0, 0.77) 0px 0px 3px;
+}
+.main_foto {
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+  top: -80px;
+  margin-bottom: -80px;
+}
+.main_foto_img_wrapp {
+  height: 240px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.main_foto_img_wrapp img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.main_foto_img_wrapp.large {
+  height: 500px;
+}
